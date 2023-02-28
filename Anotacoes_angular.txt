@@ -1,0 +1,37 @@
+-------------------------- Curso da Udemy --------------------------
+
+Angular é um famework uma plataforma de codigo aberto  
+
+* a aplicação é feita por componentes que sao pequenas linhas de codigo e cada componente pode 
+conter outros componentes, dentro dos componentes podemos ter arquivos que compoem o componente como
+o template HTML, o css e o TS.
+Os componentes precisam de uma camada de serviço onde pode ser feita para requisições.
+os modulos sao p que compoerm os componentes e a camada de serviço.
+* O angular trabalha com modulos e esses modulos sao lazy load que é o carregamento lento neste caso
+ele carrega a aplicação aos poucos para que nao gere uma "sobre carga" caso o cliente esteja no 3g e
+a plicação seja muito grande como exemplo se a pliocação tem 3 gb o angular carrega os modulos e 
+cada modulo pode conter 100 mb e assim vai ate carregar toda a plicação
+
+*ng build ou ng b gera os aquivos para colocar no servidor ou na nuvem 
+opos o comando ele ira criar uma pasta chamada dist e nesta pasta os arquivos em js para submetlos ao servidor
+
+*ng g c nomeDoArquivo gera os arquivos 
+
+nas verções 15 do angular ele nao gera mais o ngInit entao tem que colocar na mao e nao o projeto nao 
+roda basta colocar dentro do export 
+  constructor() {}
+  ngOnInit() {}
+  e ele ira funcionar
+  
+*constructor(){} dentro do component sempre sera executado primeiro que qualquer coisa, apos o constructor sera executado uma das opções abaixo:
+  ngInit()
+  ngOnChanges()
+  ngDoCheck()
+    ngAfterContentInit()
+	ngAfterContentChecked()
+	ngAfterViewInit()
+	ngAfterViewChecked()
+  ngOnDestroy()
+
+*ngOnInit é utilizado para iniciar a aplicaçãoa primeira vez os dados ou inicializa o componente
+  
