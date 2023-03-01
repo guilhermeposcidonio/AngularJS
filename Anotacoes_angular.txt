@@ -23,7 +23,8 @@ roda basta colocar dentro do export
   ngOnInit() {}
   e ele ira funcionar
   
-*constructor(){} dentro do component sempre sera executado primeiro que qualquer coisa, apos o constructor sera executado uma das opções abaixo:
+*constructor(){} dentro do component sempre sera executado primeiro que qualquer coisa, apos o constructor sera executado uma das opções(conhecidos como
+ciclos de vida) abaixo:
   ngInit()
   ngOnChanges()
   ngDoCheck()
@@ -34,4 +35,31 @@ roda basta colocar dentro do export
   ngOnDestroy()
 
 *ngOnInit é utilizado para iniciar a aplicaçãoa primeira vez os dados ou inicializa o componente
-  
+ quando o ngOnInit(): voiid {} estivre assim com o void quer dizer que ele nao ter retorno, quando nao tem ele nao da erro porem é possivel 
+ ter o retorno 
+ 
+*ngOnChanges() recebe dados atravez de um @Input(), toda vez que se recebe dados no imput o onChanges é invocado, caso nao receba não é invocado.
+o input recebe dados de fora entao caso voce delcare outra coisa na sua invocação ele ira substituir pelo dado externo
+
+Obs. quando colocamo acento grave (``) podemos dar enter e colocar mais de uma linha de comando no mesmo local 
+
+*ngDoCheck() sempre é inicializa quando se ha um evento de verificação do componente, verificando seus valores 
+o ngDoCheck posui alguns filhos que podem ser utilizados tambem:
+ *ngAfterContentInit() sempre sera utilizado apos uma ação que ira geram uma vizualizacao ou valores a sem exibidos
+ *ngAfterContentChecked() é utilzado para validação dos valores para ver se estes valores foram alterados em algum momento 
+ *ngAfterViewInit() é utilzado apos sua aplicação toda inicializada, ou seja, fara alguma ação só apos toda inicialização 
+ *ngAfterViewChecked() ele é utilzado para fazer verificação apos todo o carregamento da pagina e logo apos o carregamento verifica as alterações de valores
+
+*ngOnDestroy() ele é invocado toda vez apos um componete ou ação realizar a ocultação ou destruição da função
+
+--- DATA BINDiNG ---
+nada mais é que a ligação dos dados, dentro do data Binding temos açgumas formas de trabalhar com os dados:
+Interpolation;
+Property Binding;
+Event Binding;
+Two-way binding;
+
+*Interpolation permite que voce incorpore os dados dentro do Html utilizando as {{}} que vem do nosso ts(component)
+*Property Binding permite utilzar funções ou dados do ts no html como o [disabled]="nomefuncao" esse seria o que é colocado entre []
+*Event binding sao eventos que escutam e respondem de acordo com ações do usuario o tipo de evento é entre () como exemplo o (click)=""  
+*Two-way binding é ua mistura do Property e Event ele é utilizado com ([])
