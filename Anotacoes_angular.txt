@@ -15,7 +15,8 @@ cada modulo pode conter 100 mb e assim vai ate carregar toda a plicação
 *ng build ou ng b gera os aquivos para colocar no servidor ou na nuvem 
 opos o comando ele ira criar uma pasta chamada dist e nesta pasta os arquivos em js para submetlos ao servidor
 
-*ng g c nomeDoArquivo gera os arquivos 
+*ng g c nomeDoArquivo gera os arquivos (quando o nome do arquivo esta em camelcase ele troca por - ex. dataBiding vai ficar data-biding)
+g- generate / c - component
 
 nas verções 15 do angular ele nao gera mais o ngInit entao tem que colocar na mao e nao o projeto nao 
 roda basta colocar dentro do export 
@@ -60,6 +61,21 @@ Event Binding;
 Two-way binding;
 
 *Interpolation permite que voce incorpore os dados dentro do Html utilizando as {{}} que vem do nosso ts(component)
-*Property Binding permite utilzar funções ou dados do ts no html como o [disabled]="nomefuncao" esse seria o que é colocado entre []
+*Property Binding permite utilzar funções ou dados do ts no html como o [disabled]="nomefuncao" esse seria o que é colocado entre [] 
+se caso nao tivesse os [] o disabled seria uma função, porem no caso ele chama uma função 
 *Event binding sao eventos que escutam e respondem de acordo com ações do usuario o tipo de evento é entre () como exemplo o (click)=""  
 *Two-way binding é ua mistura do Property e Event ele é utilizado com ([])
+
+---- Diretivas ----
+sao classes que adcionam um comportamento aos elementos da apicação, como gerenciar listas, formularios e estilos
+as diretivas podem ser divididas em atributos e estruturais
+*Diretivas de atributos
+sao alterações realizada na aparencia ou no comportamento dos elementos, componentes ou nas demaias sao usados:
+.ngClass - adciona ou remove um conjunto de classes
+.ngStyle - ||                 um conjunto de estilos do HTML
+.ngModel - ||                 faz a transição de dados bidirecional em um elemento do formulario
+
+*Diretivas estruturais sao os comportamentos que moldam, condicionais como
+-ngIf - condicão se
+-ngFor - laço de repetição
+-ngSwith - conjunto de diretivas
