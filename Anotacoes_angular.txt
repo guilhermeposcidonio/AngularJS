@@ -78,4 +78,4 @@ sao alterações realizada na aparencia ou no comportamento dos elementos, compo
 *Diretivas estruturais sao os comportamentos que moldam, condicionais como
 -ngIf - condicão se
 -ngFor - laço de repetição
--ngSwith - conjunto de diretivas
+-ngSwith - conjunto de diretivas por exemplo caso for true faz uma coisa caso false faz outra

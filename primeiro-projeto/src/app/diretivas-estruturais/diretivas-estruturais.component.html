@@ -1,0 +1,46 @@
+<hr>
+<p>Diretivas</p>
+<hr>
+<br>
+/<!-- é possivel utilizar o else na condição if desta forma -->
+<p *ngIf="condition; else elseBlock">true</p>
+<p>ngIf</p>
+<ng-template #elseBlock>
+    <p>False</p>
+</ng-template>
+
+<p *ngIf="conditionClick"> True </p>
+
+<p *ngIf="!conditionClick"> False </p>
+
+<button (click)="onClick"> Clicar </button>
+
+
+<p>ngfor</p>
+<ul>
+    <li *ngFor="let item of list; let i = index;" (click)="onClickEventList(i)">
+        [ {{ i }} ] {{ item.nome }} - idade = {{ item.idade }}</li>
+</ul>
+
+<button (click)="onClickList()"> add </button>
+<hr>
+
+<br>
+<hr>
+<p>Swith case</p>
+<input type="text" [(ngModel)]="nome">
+
+<div [ngSwitch]="nome">
+    <p *ngSwitchCase="'gui'">
+        Guilherme
+    </p>
+
+    <p *ngSwitchCase="'ke'">
+        Kelly
+    </p>
+
+    <p *ngSwitchCase="'t'">
+        Tadeu
+    </p>
+</div>
+<hr>
