@@ -79,3 +79,6 @@ sao alterações realizada na aparencia ou no comportamento dos elementos, compo
 -ngIf - condicão se
 -ngFor - laço de repetição
 -ngSwith - conjunto de diretivas por exemplo caso for true faz uma coisa caso false faz outra
+
+*ng-template utilizado para fazer validações antes de carregar o template otimizando navegação
+*ng-content utilizado para a reutilização de templantes de forma opção em outro template

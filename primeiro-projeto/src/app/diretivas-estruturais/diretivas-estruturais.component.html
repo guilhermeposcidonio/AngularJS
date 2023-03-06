@@ -44,3 +44,15 @@
     </p>
 </div>
 <hr>
+
+<hr>
+<p>ng-template</p>
+<ng-template ngFor let-item [ngForOf]="list1">
+    <p>
+        {{item.nome1}}
+    </p>
+
+</ng-template>
+<input [(ngModel)]="nome1">
+<button (click)="salvar()">Salvar</button>
+<hr>
