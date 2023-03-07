@@ -81,4 +81,35 @@ sao alterações realizada na aparencia ou no comportamento dos elementos, compo
 -ngSwith - conjunto de diretivas por exemplo caso for true faz uma coisa caso false faz outra
 
 *ng-template utilizado para fazer validações antes de carregar o template otimizando navegação
-*ng-content utilizado para a reutilização de templantes de forma opção em outro template
+*ng-content utilizado para a reutilização de templantes de forma opcional em outro template utilizando partes ou inteiro 
+<ng-content> utilza todo o codigo mais se colocar assim por exemplo <ng-content select="h1"> 
+
+----- Pipes ----
+é utilizado para atribuir alores ou funções em alguma variavel por exemplo 
+<p>sem PIPE</p>
+{{date}}
+
+<p>com PIPE</p>
+{{date | date: 'dd/MM/yyyy'}}
+
+no caso acima coloco  pipe para modificar a formatação da data
+
+
+---- @NgModule ----
+dentro de um projeto angular é feito varios modulos que compoe um projeto só é usual que didiva sua aplicação em varias partes como login, cadastro, relatorios e etc
+dentro do ng-model possiumos alguns decorators a serem utilzados como 
+
+@NgModule({
+declarations: [], - serve para declara os componentes dentro do nosso modulo especifico
+imports: [], - serve para importar os componetes  dentro do modulo
+exports: [], - utilizado para exportar para outros modulos os componentes do modulo atual 
+providers: [], - usado para requisições externas no backEnd tambem services
+bootstrap: [], - é utilizado APENAS(app.component) no modulo principal para ser o start da aplicação
+})
+
+*sub-module 
+neste caaso sao criados componetes que serao utilizados em toda a aplicação 
+
+
+---- Comunicação de dados ----
+a comunicação é realizada atraves do @input e @output ambos sao trafegos de dados entre pai e filhos

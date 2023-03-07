@@ -10,6 +10,7 @@ export class DiretivasAtributosComponent implements OnInit {
   public valor: boolean = true;
   public heightPx: string = '20px'
   public backgroundColor: string = 'red'
+  public date = Date()
 
   constructor() { }
 
