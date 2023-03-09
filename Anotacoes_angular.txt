@@ -113,3 +113,10 @@ neste caaso sao criados componetes que serao utilizados em toda a aplicação
 
 ---- Comunicação de dados ----
 a comunicação é realizada atraves do @input e @output ambos sao trafegos de dados entre pai e filhos
+
+
+
+------------------------------------------------------
+Algumas extenções VsCode
+*PATH AUTOCOMPLETE
+------------------------------------------------------
