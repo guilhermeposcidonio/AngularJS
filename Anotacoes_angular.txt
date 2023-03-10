@@ -120,3 +120,5 @@ a comunicação é realizada atraves do @input e @output ambos sao trafegos de d
 Algumas extenções VsCode
 *PATH AUTOCOMPLETE
 ------------------------------------------------------
+
+.trim remove todos os esçaos de frente  de traz da variavel
