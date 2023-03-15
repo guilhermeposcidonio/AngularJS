@@ -122,3 +122,16 @@ Algumas extenções VsCode
 ------------------------------------------------------
 
 .trim remove todos os esçaos de frente  de traz da variavel
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+Como publicar uma previa do site no GitHub
+
+* é possivel publicar indo no repositorio
+* logo apos em pages
+* selecionar o main do seu projeto
+* colocar tambem /root
+* depois colocar um nome e publicar 
+isso servira para se ter uma noao de como ele se comportara na nuvem
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*
