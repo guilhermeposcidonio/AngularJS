@@ -135,3 +135,6 @@ Como publicar uma previa do site no GitHub
 isso servira para se ter uma noao de como ele se comportara na nuvem
 
 *-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+*Subscrible é um evento que apos desenvolvido ele fica esperando determinda ação ou escutando o que ela vai retornar para 
+executar determinada ação 

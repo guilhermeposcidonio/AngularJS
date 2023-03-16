@@ -11,9 +11,7 @@ describe('FoodListComponent', () => {
       declarations: [ FoodListComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(FoodListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
