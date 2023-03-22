@@ -138,3 +138,17 @@ isso servira para se ter uma noao de como ele se comportara na nuvem
 
 *Subscrible é um evento que apos desenvolvido ele fica esperando determinda ação ou escutando o que ela vai retornar para 
 executar determinada ação 
+
+
+**OBS Quando necessario colocar uma href="" e nao utilizar sua função de link por exemplo basta usar o href="javascript: void(0)" que inabilita a função
+
+**Routes**
+as rotas sao utilizadas para a navegação das pagina, path é o nome do arquivo o qual sera carregado sempre que tiver uma path vazia("" seria assim e a rota é a principal) colocar 
+o pathMatch: 'full' para que o angular nao renderize coisas a mais que o solicitado 
+
+Dentro das aspas do path é o nome da rota que sera redirecionada, para validar as rotas é possivel criar uma pagina 404 porem caso a pessoa digite uma rota 
+que nao existe basta colocar no path '**'(chamada de roa coringa ) assim o anular ira enteder que a rota acessada nao existe assim voce pode redirecionalo para a 404 ou uma rota esecifica.
+
+**Não é possivel criar pastas com nome só com numeros
+
+**href="" é utilizado para os link porem nao é muito usual e nem performatico para isso é utilizado o routerLink
