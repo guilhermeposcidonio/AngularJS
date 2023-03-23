@@ -2,15 +2,16 @@
     <nav>
         <ul>
             <li>
-                <a routerLink="/">Home</a>
+                <!-- routerLinkActive utilizado para estilizar a rota | routerLinkActiveOptions  utilizado para definir exatamente qual rota estilizar -->
+                <a routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Home</a>
             </li>
         
             <li>
-                <a routerLink="/sobre">Sobre</a>
+                <a routerLink="/sobre" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Sobre</a>
             </li>
             
             <li>
-                <a routerLink="/404">Error</a>
+                <a routerLink="/404" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">Error</a>
             </li>
         </ul>
     </nav>

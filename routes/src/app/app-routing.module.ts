@@ -7,7 +7,7 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 const routes: Routes = [
  /*  pagina principal, assim utilizado o pathMatch para que nao redenrize outras paginas juntos */
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'sobre', component: SobreComponent },
+  { path: 'sobre/:id/:username', component: SobreComponent },
   { path: '404', component: PageErrorComponent },
   /* essa é a rota "coringa" tudo que for digitado na rota que nao exista sera rediecionado para a pagina 404 */
   {path: '**', redirectTo: '404'}

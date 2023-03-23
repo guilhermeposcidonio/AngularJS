@@ -152,3 +152,10 @@ que nao existe basta colocar no path '**'(chamada de roa coringa ) assim o anula
 **Não é possivel criar pastas com nome só com numeros
 
 **href="" é utilizado para os link porem nao é muito usual e nem performatico para isso é utilizado o routerLink
+
+**routerLinkActive utilizado para estilizar as rotas colocando cor ou efeitos do css/scss 
+
+**routerLinkActiveOptions por exeplo caso voce queira estrilizar apenas a rota que foi clicada é preciso utilza-lo 
+caso nao o utile e a estilização for "/"(home) ou "/perfil"(seria uma rota) ambas serao estilizadas entao é necessario utiliza-lo e
+colocar o exact: true tambem assim  :
+-> [routerLinkActiveOptions]="{ exact: true }"
