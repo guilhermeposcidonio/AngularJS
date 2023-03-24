@@ -159,3 +159,20 @@ que nao existe basta colocar no path '**'(chamada de roa coringa ) assim o anula
 caso nao o utile e a estilização for "/"(home) ou "/perfil"(seria uma rota) ambas serao estilizadas entao é necessario utiliza-lo e
 colocar o exact: true tambem assim  :
 -> [routerLinkActiveOptions]="{ exact: true }"
+
+**router
+      /* vai para rota sem dar o reload na pagina normalmente utilzada para rotas internas e a forma de utilza-lo tem que ser assim 
+      this.router.navigate(['404']);
+      /* vai para rota com o reload usado apra redirecionar para outras rotas externas e é utilzado com abaixo
+      this.router.navigateByUrl('404');
+obs. sempre que no ngmodles do routing tiver forRoot() esse é o principal
+
+**rotas filhas sao as rotas que provem de uma principal /sobre/:id/dados sobre pode ser uma rota pai e :id/dados uma rota filha que sera invocada pos a pai ou utilizando recursos da pai
+
+**LAzy Loading carregamento aos poucos e quando carrega salva no dispositivo sem a necessidade de recarregar novamente tornando o sistema mais rapido 
+
+**no angular 1 ou em algumas aplicações é necessario usar o Hash(#) home/# no caso basta colocar no modulo de rota root como abaixo 
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule]
+})
