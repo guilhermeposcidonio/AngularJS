@@ -3,6 +3,7 @@
 @use './config-scss/rem-calc.scss';
 
 html {
+    font-family: 'Roboto', sans-serif;
     background: var(--primary-color);
 }
 
