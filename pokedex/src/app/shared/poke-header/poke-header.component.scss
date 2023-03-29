@@ -1,0 +1,12 @@
+@import '../../../config-scss/rem-calc.scss';
+
+/* esse comando seta esse header apena nesse componente */
+:host {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: rem-calc(40) 0;
+    }
+}
