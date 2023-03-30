@@ -176,3 +176,6 @@ obs. sempre que no ngmodles do routing tiver forRoot() esse é o principal
   imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
+
+*transforma pixel em rem
+https://nekocalc.com/px-to-rem-converter
