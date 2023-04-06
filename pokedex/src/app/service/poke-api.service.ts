@@ -20,10 +20,15 @@ private http: HttpClient
     return this.http.get<any>(this.url).pipe(
       tap(res => res),
       tap(res => {
-        console.log(res);
+       res.results.map( (resPokemons: any) => {
+     this.apiGetPokemons(resPokemons.url)
+       })
         
       })
     )
   }
 
+  public apiGetPokemons( url: string ) {
+    
+  }
 }
