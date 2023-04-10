@@ -179,3 +179,15 @@ obs. sempre que no ngmodles do routing tiver forRoot() esse é o principal
 
 *transforma pixel em rem
 https://nekocalc.com/px-to-rem-converter
+
+-------------------------------------------------------------------
+*********** se necessario rodar um server local para teste sem subir para DEV ***********
+*Instala a biblioteca
+npm install http-server -g
+
+*builda utilizando as configurações do servidor
+ng build --named-chunks 
+
+*start o servidor
+http-server dist/SCA (sca é trocado pelo nome do projeto)
+-------------------------------------------------------------------
