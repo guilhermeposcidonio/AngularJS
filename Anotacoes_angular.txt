@@ -191,3 +191,7 @@ ng build --named-chunks
 *start o servidor
 http-server dist/SCA (sca é trocado pelo nome do projeto)
 -------------------------------------------------------------------
+
+*tap retorna um valor pegando dentro de uma url ou um objeto 
+*map é a mesma coisa do forEach porem o for each é utilizado para atribuir fazer loop em um objeti iu array
+ja o map é feito para fazer o loop e aribuir valores ou alterar valeres do array e objeto
