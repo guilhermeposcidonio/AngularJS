@@ -196,4 +196,19 @@ http-server dist/SCA (sca é trocado pelo nome do projeto)
 *map é a mesma coisa do forEach porem o for each é utilizado para atribuir fazer loop em um objeti iu array
 ja o map é feito para fazer o loop e aribuir valores ou alterar valeres do array e objeto
 
-*forkJoin[] - é utilzado para executar duas api ao mesmo tempo sem utilizar varios subcribes e ao final do processo ele nos da resposta
+*forkJoin[] - é utilzado para executar duas api ao mesmo tempo sem utilizar varios subcribes e ao final do processo ele nos da resposta 
+
+**Quando se precisa que uma funcção seja executada imediatamente pode pode ser escrita como abaixo 
+	**padrao**
+	function teste(){ aqui fica o codigo};
+	logo apos é chamada quantas ezes necesario
+	apenas colocando o teste();
+	**forma imediata**
+	function(){codigo aqui}();
+nao precisa declara ela com um nome especifico pois sera invocada imediatamente
+
+*quando necessario retirar um elemento do array da ultima posição  basta colocar o 
+nome_do_array.pop();
+quando necessario tirar o primeiro nome_do_array.shift():
+
+*touch nome_arquivo.Extensao_arquivo cria o arquivo pelo terminal 
