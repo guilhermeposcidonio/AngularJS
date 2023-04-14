@@ -212,3 +212,6 @@ nome_do_array.pop();
 quando necessario tirar o primeiro nome_do_array.shift():
 
 *touch nome_arquivo.Extensao_arquivo cria o arquivo pelo terminal 
+
+*Quando necessario ficar apertando ctrl + f5 ha a opcao de desabilitar o cach na inspeção do navegador 
+e habilitar disable cache,
