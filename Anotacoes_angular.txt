@@ -214,4 +214,12 @@ quando necessario tirar o primeiro nome_do_array.shift():
 *touch nome_arquivo.Extensao_arquivo cria o arquivo pelo terminal 
 
 *Quando necessario ficar apertando ctrl + f5 ha a opcao de desabilitar o cach na inspeção do navegador 
-e habilitar disable cache,
+e habilitar disable cache
+
+*Fech busca em determinado caminha com a promessa de uma resposta
+
+*catch retorno de erro
+
+*finally sempre sera executado mesmo se der erro ao final 
+
+*debugger utilizado 
