@@ -222,4 +222,15 @@ e habilitar disable cache
 
 *finally sempre sera executado mesmo se der erro ao final 
 
-*debugger utilizado 
+*debugger utilizado quando necessario encontrar a aplicação no log do navegador ele fara com que voce va direta na onde foi declarado quando abrir o sources
+
+*quando necessario executar mais de uma chamada ao mesmo tempo podemos fazer uma promise
+
+Promise.all([
+fetch('Aqui o que sera executado'])
+fetch('Aqui o que sera executado'])
+fetch('Aqui o que sera executado'])
+fetch('Aqui o que sera executado'])
+]).then((results) => {
+aqui vai o codigo que sera executado apos as promessas sera cumpridas
+})
