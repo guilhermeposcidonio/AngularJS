@@ -234,3 +234,10 @@ fetch('Aqui o que sera executado'])
 ]).then((results) => {
 aqui vai o codigo que sera executado apos as promessas sera cumpridas
 })
+
+
+**Caso necessario colocar um herf para linkar algo  seja preciso retirar a linha que fica embaixo com um link basta declarar no css o text-decoration: none;
+
+**DOM - Document Object Model é como o navegador ve sua aplicação que nada mais é uma forma de arvore que chama suas tags de acordo com o que foi feito no Html
+
+**shadow -  basicamente uma forma de arvore porem que nao esta na dom mais é exibida nela por isso se chama fantasma porem ela estara em outro lugar sende requisitada no hmtl
