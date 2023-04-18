@@ -250,3 +250,20 @@ aqui vai o codigo que sera executado apos as promessas sera cumpridas
 * é possivel tipar as funções para que retorne mais de um tipo function teste(): string | number {}
 
 **o tipo any faz com que sua função sempre retone porem nao é usual 
+
+*Async sempre dee ser usado em promisses que serao executada de forma assincrona
+
+*private a variavel só pode ser acessada dentro da mesma classe  e o protected pode ser acessado tambem de subclasses que erdam esta classe e o public todas as classes veem 
+
+*termos genericos any sao utilizados somente quando nao se sabe o que ira retornar como exemplo em um arry 
+
+*spread(...) nada amis é que aceitar mais de um item  
+
+Exemplo - 
+	function concatArray(...itens: any[]): any[] {
+		return new Array().concat(...itens);
+	}
+	const numArray = concatArray([1,5], [3]);
+	console.log(numArray);
+	
+	neste exemplo é aceito varios array e concatena todos que foram passados no caso acima o resultado sera [1,5,3]
