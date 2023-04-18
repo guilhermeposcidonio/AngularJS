@@ -241,3 +241,12 @@ aqui vai o codigo que sera executado apos as promessas sera cumpridas
 **DOM - Document Object Model é como o navegador ve sua aplicação que nada mais é uma forma de arvore que chama suas tags de acordo com o que foi feito no Html
 
 **shadow -  basicamente uma forma de arvore porem que nao esta na dom mais é exibida nela por isso se chama fantasma porem ela estara em outro lugar sende requisitada no hmtl
+
+*array multi types é um array que pode ser definido mais de um tipo como let meuArray:(string | number)[] = ["gui", 27] nesse caso a ordem dos fatores nao mudam o resultado 
+
+*Tuplas é um array multiTypes tambem porem a sua ordem deve ser swguida e retonadad de acordo com o esperado let meuArray:[string, number, number] = ["gui", 1.79, 27]
+
+* é possivel tipar as funções para que ela sempre retorne o mesmo tipo function teste(): string {}
+* é possivel tipar as funções para que retorne mais de um tipo function teste(): string | number {}
+
+**o tipo any faz com que sua função sempre retone porem nao é usual 
