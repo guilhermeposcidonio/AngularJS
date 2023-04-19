@@ -51,7 +51,7 @@ o ngDoCheck posui alguns filhos que podem ser utilizados tambem:
  *ngAfterViewInit() é utilzado apos sua aplicação toda inicializada, ou seja, fara alguma ação só apos toda inicialização 
  *ngAfterViewChecked() ele é utilzado para fazer verificação apos todo o carregamento da pagina e logo apos o carregamento verifica as alterações de valores
 
-*ngOnDestroy() ele é invocado toda vez apos um componete ou ação realizar a ocultação ou destruição da função
+*ngOnDestroy() ele é invocado toda vez apos um componete ou ação realizar a ocultação ou destruição da função utilitzado oara destruir e nao ter vazamento de memoria
 
 --- DATA BINDiNG ---
 nada mais é que a ligação dos dados, dentro do data Binding temos açgumas formas de trabalhar com os dados:
@@ -269,3 +269,13 @@ Exemplo -
 	neste exemplo é aceito varios array e concatena todos que foram passados no caso acima o resultado sera [1,5,3]
 
 *StackBlits é  um local para codificar online com projetos pre instalados com o basico de varios projetos 
+
+*(mouseover)="funcao()" é o evento do html utilizado quando se passa o mouse em cima de alguma tag e é possivel chmar uma função
+
+*ngIf pode se utilizar o else para dimiuir codigo 
+Ex
+<tag *ngIf="";else anotherBlock></tag>
+
+<ng-template #anotherBlock></ng-template>
+
+*ng-content
