@@ -267,3 +267,5 @@ Exemplo -
 	console.log(numArray);
 	
 	neste exemplo é aceito varios array e concatena todos que foram passados no caso acima o resultado sera [1,5,3]
+
+*StackBlits é  um local para codificar online com projetos pre instalados com o basico de varios projetos 
