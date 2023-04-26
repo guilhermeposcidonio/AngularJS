@@ -1,0 +1,32 @@
+.container__menu-bar {
+    border: 1px solid white;
+    margin-top: 15px;
+
+
+    width: 200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container__menu-bar>ul {
+    display: flex;
+    flex-direction: row;
+    border-adius: 40%;
+    border-top-right-radius: 10px;
+    background-color: aliceblue;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container__menu-bar>ul>li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.container__menu-bar>ul>li>a {
+    margin-right: 20px;
+    list-style: none;
+}

@@ -1,10 +1,7 @@
 .container__small-card {
-border: 1px solid white;
-width: 700px;
-margin-top: 15px;
+    width: 700px;
+    margin-top: 15px;
 
-display: flex;
-flex-direction: row;
 }
 
 .container__small-card-content {
@@ -12,7 +9,7 @@ flex-direction: row;
     flex-direction: row;
 }
 
-.small-card__photo > img {
+.small-card__photo>img {
     width: 200px;
     min-width: 200px;
     margin-right: 20px;
