@@ -279,3 +279,5 @@ Ex
 <ng-template #anotherBlock></ng-template>
 
 *ng-content
+
+***Quando necessario editar algo direto no git hub é so aperta " . " que ira abri um editor online
