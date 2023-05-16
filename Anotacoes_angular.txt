@@ -281,3 +281,5 @@ Ex
 *ng-content
 
 ***Quando necessario editar algo direto no git hub é so aperta " . " que ira abri um editor online
+
+**Justify-content: cente é utilizado quando for coluna e o align-items: center é quando é linha
