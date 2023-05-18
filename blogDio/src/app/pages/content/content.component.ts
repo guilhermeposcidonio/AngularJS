@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { data } from 'src/app/data/dataFake';
 
 @Component({
   selector: 'app-content',
@@ -7,16 +8,25 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  photoCover: string = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.vecteezy.com%2Ffotos-gratis%2Fwallpaper&psig=AOvVaw0lU0w_ro7kqtIqlHR88Fb4&ust=1684286865778000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMCOsdTX-P4CFQAAAAAdAAAAABAE";
-  contentTitle: string = "Notica exemplo";
-  contentDescription: string = "Descrição";
+  photoCover: string = "";
+  contentTitle: string = "";
+  contentDescription: string = "";
+  private id: string | null = "0"
   constructor(
     private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(value =>
-      console.log(value.get("id"))
+      this.id = value.get("id")
     )
+  }
+
+  setValuesToComponent(id: string | null) {
+    const result = data.filter(article => article.id == id)[0]
+
+    this.contentTitle = result.title
+    this.contentDescription = result.description
+    this.photoCover = result.photoCover
   }
 }
