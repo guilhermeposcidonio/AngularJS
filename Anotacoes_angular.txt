@@ -147,7 +147,7 @@ as rotas sao utilizadas para a navegação das pagina, path é o nome do arquivo
 o pathMatch: 'full' para que o angular nao renderize coisas a mais que o solicitado 
 
 Dentro das aspas do path é o nome da rota que sera redirecionada, para validar as rotas é possivel criar uma pagina 404 porem caso a pessoa digite uma rota 
-que nao existe basta colocar no path '**'(chamada de roa coringa ) assim o anular ira enteder que a rota acessada nao existe assim voce pode redirecionalo para a 404 ou uma rota esecifica.
+que nao existe basta colocar no path '**'(chamada de rota coringa ) assim o anular ira enteder que a rota acessada nao existe assim voce pode redirecionalo para a 404 ou uma rota esecifica.
 
 **Não é possivel criar pastas com nome só com numeros
 
@@ -283,3 +283,11 @@ Ex
 ***Quando necessario editar algo direto no git hub é so aperta " . " que ira abri um editor online
 
 **Justify-content: cente é utilizado quando for coluna e o align-items: center é quando é linha
+
+**Rotas na configuração de rotas é possivel declarar se voce quer a rota exatamente igual ao path ou se ela pode ter variações 
+assim utilza o pathMatch: 'full'(para que seja exatemnte igual) ou 'prefix' quando ela contem o path mais pode conter outras coisas por padrao 
+é o prefix normalmente é usal utilzar o full para rotas inicial(url principal) para que o programa nao se confunda com o passar do desenvolvimento
+
+**rotas coringaé poassado uma string ou seja uma nova rota que pode ser uma pagina personalizada apra erro ou só '' que o redirecionara para a home 
+Dentro das rotas é possivel pegar o conteudos da rotas com o activedRoute caso precise pegar depois do ? é preciso usar o queryParams e ser for preciso pegar dos filhos basta colocar FirstChild no lugar do queryParams ou o filho que for 
+rotas filhas podem herdar o começo da rota pai e mais um encremento sendo assim muito util em nao precisar duplicar as rotas  
