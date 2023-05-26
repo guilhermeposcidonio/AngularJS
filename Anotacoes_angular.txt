@@ -291,3 +291,7 @@ assim utilza o pathMatch: 'full'(para que seja exatemnte igual) ou 'prefix' quan
 **rotas coringaé poassado uma string ou seja uma nova rota que pode ser uma pagina personalizada apra erro ou só '' que o redirecionara para a home 
 Dentro das rotas é possivel pegar o conteudos da rotas com o activedRoute caso precise pegar depois do ? é preciso usar o queryParams e ser for preciso pegar dos filhos basta colocar FirstChild no lugar do queryParams ou o filho que for 
 rotas filhas podem herdar o começo da rota pai e mais um encremento sendo assim muito util em nao precisar duplicar as rotas  
+
+** utilizado paraque o app saiba interpretar json
+ "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
