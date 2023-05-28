@@ -295,3 +295,12 @@ rotas filhas podem herdar o começo da rota pai e mais um encremento sendo assim
 ** utilizado paraque o app saiba interpretar json
  "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+
+ ** quando necessario estilizar algo para que o ouse vire a maozinha colocar  cursor: pointer; no css
+estilização para simular o efeito de clique
+.btn-option:active {
+    position: relative;
+    top: 1px
+}
+
+**as keyof typeof é quando é necessario declarar que uma variavell vai se comportar de acordo com o que esta vindo em seu payload
