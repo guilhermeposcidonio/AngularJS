@@ -1,15 +1,27 @@
 <div class="container__content">
     <div class="content_cover">
-        <img src=" {{ photoCover }}" alt="">
+
+        <img *ngIf="id == '1'"
+            src="https://t.ctcdn.com.br/09Y6BbLFxNn7XGCYRGzEI0p0oy8=/400x400/smart/filters:format(webp)/i490027.jpeg"
+            alt="">
+        <img *ngIf="id == '2'"
+            src="https://thumbs.dreamstime.com/b/facebook-gosta-dos-polegares-acima-do-%C3%ADcone-do-s%C3%ADmbolo-52122552.jpg"
+            alt="">
+        <img *ngIf="id == '3'" src="https://files.tecnoblog.net/wp-content/uploads/2022/03/instagram-capa-1.jpg" alt="">
+        <img *ngIf="id == '4'" src="https://img.freepik.com/icones-gratis/gmail_318-265165.jpg" alt="">
+
     </div>
     <div class="content__title">
-        <h1>{{contentTitle}}</h1>
+        <a href="{{ link }}">
+            <h1>{{contentTitle}}</h1>
+        </a>
     </div>
     <div class="contenT__description">
+        <p>
+            {{contentDescription}}
+        </p>
+        <br>
         <a [routerLink]="['']">
             << Voltar </a>
-                <p>
-                    {{contentDescription}}
-                </p>
     </div>
 </div>
