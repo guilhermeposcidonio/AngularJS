@@ -15,10 +15,12 @@
                     </li>
                 </ul>
             </section>
-            
+
             <section class="pokemon__image">
                 <img [src]="pokemon.status.sprites.other.dream_world.front_default" [alt]="pokemon.name">
             </section>
         </a>
     </ng-template>
 </section>
+
+<img src="assets/errr.png" alt="Deu erro na mostragem do pokemon" width="100%" *ngIf="apiError">
