@@ -304,3 +304,14 @@ estilização para simular o efeito de clique
 }
 
 **as keyof typeof é quando é necessario declarar que uma variavell vai se comportar de acordo com o que esta vindo em seu payload
+
+------------------Testes Unitarios------------------
+Teste unitarios sao diferentes dos testes realizados com o fluxo do app funcionando se ele vai carregar a apagina ou se vai pra determinada tela ou determinada funciionalidade
+o teste unitario vai alem ele executao fluxo de sistema executando as funções com pequenos pedaços de codigos que fara uma simulação de como ele realmente se comportara
+
+**Guarda de rotas sao bsaicamente um verificador de rotas que farao alguma açao antes durante ou apos a ação do usuario 
+os tipos de rotas sao:
+CanActivete: usadas em login que a rota só sera ativadas apos a validação
+CanDeactivate: um exemplo é quando alguem edta preechendo um formulario e decide sair do site e ele só vai sair se confirmar a ação 
+canLoad: verifica se o modolo pode ser carregado que utiliza lazy load porque o usuario nao pode acessar a rota para depois falar que ele nao tem permissao para acessa-la
+CanActiveChild é semelhante ao canActive porem de rotas aninhadas  
