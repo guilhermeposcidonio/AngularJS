@@ -10,7 +10,7 @@ export class CanActiveGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-    if (route.queryParams['aacount'] === 'admin' && route.queryParams['password'] === '1234') {
+    if (route.queryParams['account'] === 'admin' && route.queryParams['password'] === '1234') {
       console.log(route);
       console.log(state);
       return true;
