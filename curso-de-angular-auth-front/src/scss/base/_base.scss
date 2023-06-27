@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Roboto"
+        , sans-serif;
+    font-size: normal;
+    font-size: 400;
+}
+
+body {
+    height: 100vh; //pega quase 100% da tela
+    background: url("~/assets/Bg.jpg") no-repeat; // o ~ tira a necessidade de ficar colcando ../../ se colocar o ~ ele pega o caminho relativo 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

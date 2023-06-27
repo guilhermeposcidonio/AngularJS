@@ -315,3 +315,5 @@ CanActivete: usadas em login que a rota só sera ativadas apos a validação
 CanDeactivate: um exemplo é quando alguem edta preechendo um formulario e decide sair do site e ele só vai sair se confirmar a ação 
 canLoad: verifica se o modolo pode ser carregado que utiliza lazy load porque o usuario nao pode acessar a rota para depois falar que ele nao tem permissao para acessa-la
 CanActiveChild é semelhante ao canActive porem de rotas aninhadas  
+
+** o ~ tria a necessidade de ficar colcando ../../ se colocar o ~ ele pega o caminho relativo 
