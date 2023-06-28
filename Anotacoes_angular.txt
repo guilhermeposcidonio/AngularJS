@@ -317,3 +317,5 @@ canLoad: verifica se o modolo pode ser carregado que utiliza lazy load porque o 
 CanActiveChild é semelhante ao canActive porem de rotas aninhadas  
 
 ** o ~ tria a necessidade de ficar colcando ../../ se colocar o ~ ele pega o caminho relativo 
+
+**[disabled]="formAuth.invalid" usado para desabilitar o button de acordo com a variavel 
