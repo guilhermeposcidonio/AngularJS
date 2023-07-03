@@ -167,6 +167,8 @@ colocar o exact: true tambem assim  :
       this.router.navigateByUrl('404');
 obs. sempre que no ngmodles do routing tiver forRoot() esse é o principal
 
+**title - nas rotas igniifca o nome que aparecera nas abas caso nao coloque nada ira setar o padrao do app.routing
+
 **rotas filhas sao as rotas que provem de uma principal /sobre/:id/dados sobre pode ser uma rota pai e :id/dados uma rota filha que sera invocada pos a pai ou utilizando recursos da pai
 
 **LAzy Loading carregamento aos poucos e quando carrega salva no dispositivo sem a necessidade de recarregar novamente tornando o sistema mais rapido 
