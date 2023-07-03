@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post("/sign", (req, res) => {
-  const email = "dener@vidafullstack.com.br";
+  const email = "gui@gmail.com.br";
   const password = "123";
 
   if (req.body.email === email && req.body.password === password) {
