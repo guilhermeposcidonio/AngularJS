@@ -322,4 +322,22 @@ CanActiveChild é semelhante ao canActive porem de rotas aninhadas
 
 (ngSubmit) utilizado para chamar a funcao quando ela for submetida
 
-**defer utilizado no js quando necessario colocalo no html para fazer um carregamento lento para que nao inpacte na pagina 
+**defer utilizado no js quando necessario colocalo no html para fazer um carregamento lento para que nao inpacte na pagina
+
+** Diferença entre == e === quando utilizado o == é que voce quer saber se uma variavel é igual a outra mesmo que sua tipagem seja diferente
+EX. 1 == "1" = true porque sao iguais porem declaradas diferentes
+Agora se voce quer o resultado exatamente igual é utilizado o === 
+EX. 1 === "1" = false porque por mais que sao iguais a tipagem é diferente.
+
+Obs o mesmo serve para o operador diferente !=(conteudo) e !==(literal)
+
+**Declaração de variaveis 
+var - é legado e nao utilizado mais por conta de ser utilizado globalmente podendo assim seus valores serem alterados
+let -dentro da função porem ele pode mudar varias vezes poor ex. se ela for atriibuida dentro de um for
+conts - nao muda, declarada dentro das funções tambem 
+
+**Quando temos varios if encadeados em torno de uma unica variavel é mais usual que utiizemos o switch case
+usar o default ele para caso ser um padrao caso ele nao seja nenhuma das condições
+
+**em uma função caso voce precise deixar um valor pre setado caso ele venha vazio pode ser feito como abaixo
+Ex. function(ent1 = 0, ent2 = 0 )
