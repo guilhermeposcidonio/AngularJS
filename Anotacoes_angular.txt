@@ -367,3 +367,13 @@ return JSON.parse(JSON.stringify(objeto));
 }
 
 **unshift - é como se fosse o push porem adiciona na primeira posição do array
+
+** shift  utilizado para remover o prrimeiro elemento do array e retorna esse elemento removido
+
+** pop utilizado para remover o ultimo elemento do array e retorna esse elemento
+
+**slice pega os dados dentro de um intervalo sem quebrar o array 
+Ex. objeto.slice(0, 3) pegara os atributos do primeiro ao 4 e ignora o restante
+
+** splice remove os dados do array dentro do intervalo colocado 
+EX. objeto.splice(2,1) removera o atributo 3 atributo so
