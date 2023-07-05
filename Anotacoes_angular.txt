@@ -339,5 +339,31 @@ conts - nao muda, declarada dentro das funções tambem
 **Quando temos varios if encadeados em torno de uma unica variavel é mais usual que utiizemos o switch case
 usar o default ele para caso ser um padrao caso ele nao seja nenhuma das condições
 
-**em uma função caso voce precise deixar um valor pre setado caso ele venha vazio pode ser feito como abaixo
+**Em uma função caso voce precise deixar um valor pre setado caso ele venha vazio pode ser feito como abaixo
 Ex. function(ent1 = 0, ent2 = 0 )
+Assim tambem nao é necessario colocar no html os alternadores para caso a variavel nao venha por exemplo abaixo
+
+const objeto = {
+tamanho: 45,
+estoque: true,
+marcas: [{nome: 'irineu'}, {nome: 'abreu'}]
+}
+
+const {tamanho, estoque, marcas = 'Não possui marcas cadastradas!'} = objeto
+
+**objeto.hasOwnProperty('atributo') verifica se existe esta propriedade dentro do objeto para que haja uma validação pode se usar tambem a forma in que seria 'atributo' in objeto que faria a mesma validação.
+
+**Quando necesario unir dois objetos para que se torne um só basta declara uma variavel e utilizar o Object.assign como o exemplo
+EX. let variavelMesclada = Object.assign(objeto1, objeto2)
+Obs. caso o objeto possua mais objetos dentro ele pode retornar [object] e nao trazer aas informações entao podemos colocar antes do objeto um spread que seria o ...
+e ficaria assim
+EX. let variavelMesclada = Object.assign(...objeto1, ...objeto2)
+OBS.! essa mesclagem pode ocasionar algumas alterações no objeto principal caso voce precise reutilizado novamente sempre validar antes de utiiza-la uma correção que poderia ser efetiva neste caso seria 
+converter para string e depois dar um parse antes de setala no objeto
+EX. let variavelMesclada = Object.assign(...JSON.parse(JSON.stringify(objeto1)), ...JSON.parse(JSON.stringify(objeto2))
+é possivel em caso de utilizar muitas vezes esse mesclagem fazer uma função que receba os paramertos acima e só passar o objeto para conversao antes de clona-lo
+EX.function cloneObjects(obj){
+return JSON.parse(JSON.stringify(objeto));
+}
+
+**unshift - é como se fosse o push porem adiciona na primeira posição do array
