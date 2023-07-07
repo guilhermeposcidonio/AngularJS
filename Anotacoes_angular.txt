@@ -377,3 +377,20 @@ Ex. objeto.slice(0, 3) pegara os atributos do primeiro ao 4 e ignora o restante
 
 ** splice remove os dados do array dentro do intervalo colocado 
 EX. objeto.splice(2,1) removera o atributo 3 atributo so
+
+**array.sort() ordena o array crescente 
+**array.reverse() ordena de fora decrescente 
+Obs. quando for numeros é necesario colocar uma comparação
+EX. array.sort((a,b) => a - b) ordena de forma crescente array.sort((a,b) => b - a) descrecente 
+ou
+array.sort((a,b) => a - b).reverse(); ordena e depois coloca de forma descrecente
+Obs. quando for um array de objetos nao é possivel tirar um de outro para ordenar é necessario usar o localeCompare()
+EX. array.sort((a,b) => a.atributo.localeCompare(b.atributo)) ordena de forma crescente
+array.sort((a,b) => b.atributo.localeCompare(a.atributo)) decrescente ou array.sort((a,b) => a.atributo.localeCompare(b.atributo)).reverse()
+
+**Estruturas de repetição - for  - for in - for of
+for - estrutura de repetição convencional utilizando o i 
+for of - utilizado para arrays sem a necessidade do i 
+Ex. for(let item of array){ array.item(pega os valores do array) }
+for in - utilitzado para objetos itens de objetos nao funciona com array
+Ex. for(let item in objeto) {objeto.item(pega os valores)}
