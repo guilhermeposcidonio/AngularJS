@@ -394,3 +394,18 @@ for of - utilizado para arrays sem a necessidade do i
 Ex. for(let item of array){ array.item(pega os valores do array) }
 for in - utilitzado para objetos itens de objetos nao funciona com array
 Ex. for(let item in objeto) {objeto.item(pega os valores)}
+
+**no for quando se ha a necessidade de uma validação e depois parar a o looping basta usar uma validação e o break
+caso queira que nada ocorra e ele termine o looping basta utiliazr o continue ou nao colocar nada 
+
+**map é igaul o forEach porem utilizado para trocar infromações do array
+
+**filter filtra todos os elementro dentro do array de acordo com a condição 
+
+**finde tra apenas o primeiro que ele encontrar no array busca masi acertiva 
+
+**every percorre o array e reto se ele exeite ou nao no array com true ou fasle 
+
+**some igual o every masi retorna apens um de acordo com o desejado
+
+**reduce pega todos os valores do arry e o transforma em um no so 
