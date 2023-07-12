@@ -409,3 +409,27 @@ caso queira que nada ocorra e ele termine o looping basta utiliazr o continue ou
 **some igual o every masi retorna apens um de acordo com o desejado
 
 **reduce pega todos os valores do arry e o transforma em um no so 
+
+**querySelector  seleciona alguma tag ou algo no html e tra o primeiro que achar 
+querySelectAll seleciona todos que se torna uma lista 
+
+**setTimeout coloca um tempo para que a funcao seja executada
+
+**setInterval executa vaias vezes naquele intervalo
+
+**getElementeById= pega pelo id que esta no html 
+
+**getElementByClass pega as classes se fixer um foreach pega todas 
+
+**getleementeByTagName pega todas os lelemtnos pela tag no hmtl 
+
+**innerText retorna o texto sem formatações somenmte o texto 
+texteContent retorna o texto com as formatações 
+
+**innerHtml retorna o html ou altera o hmtl  visualmente melhor
+o createElement faz a mesma coisa porem é mais perfomatico 
+
+**setAttribute, getAttribute e removeAttribute utilizado para adicionar class e id ao html e o remove pode remover de uma class sendo assim
+interessante para se utilzar em um layout
+
+**Dom salva na memoria ja exibindo  createDocumentFragmente salva em frgmentos e depois exibe 
