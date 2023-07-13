@@ -433,3 +433,24 @@ o createElement faz a mesma coisa porem é mais perfomatico
 interessante para se utilzar em um layout
 
 **Dom salva na memoria ja exibindo  createDocumentFragmente salva em frgmentos e depois exibe 
+
+**para buscar um filho com o DOM é necessario dar um querySelector na tag desejada aplicala a cvariavel e depois colcar ela com o parentElement ou parentNode
+EX. 
+const exemplo1 = document.querySelector("strong")
+console.log(body.parentElement)
+
+**children e childNodes pega os filhos pore é necessario percorrer o array para utilizalos 
+utilizando o Array.from  que nada mas é que pega um array que nao pode ser convertido e o transforma em um array de verdade 
+*firstChild(pego o texto) e firstElementChild(pega o elemento) pega o primerio elemento filho dentro da tag
+*lastChild e lastElementChild é a mesma coisa porem pegando o ultimo elemento 
+
+**nextSibling ou nextElemnteSibling pega a proximo elemento da tag solicitada(iramo)
+
+**previousSibling ou previousElemnteSibling pega a anterior elemento da tag solicitada(iramo)
+
+**append e appendChild o primeiro adiciona ao seu hmtl um texto da forma passada nao aceitando tags o sengundo aceita datg desde que seja cirado um elemento div e dentro da variavel
+refernciada coloque o inner tambem para ai sim utilizar o child ,
+
+**insertBefore insere um elemento apos a tag desejada 
+
+**after e befor insege apos a tag porem somente textos
