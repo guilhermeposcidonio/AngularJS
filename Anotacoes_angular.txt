@@ -454,3 +454,13 @@ refernciada coloque o inner tambem para ai sim utilizar o child ,
 **insertBefore insere um elemento apos a tag desejada 
 
 **after e befor insege apos a tag porem somente textos
+
+**formData e formSubmit pega os dados do formulario o formData exite tabem o has, delete, get e has
+
+**tipo void é quando a variavel nao tem retorno
+tipo never quando a variavel vai ficar em um loop infinito e nunca irar parar de rodar
+alias é possivel fzer um alias para declarar as variavies 
+EX.
+type alias = string | number;
+let dados: alias;
+let dados2: alias;  
