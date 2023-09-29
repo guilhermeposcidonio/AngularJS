@@ -464,3 +464,21 @@ EX.
 type alias = string | number;
 let dados: alias;
 let dados2: alias;  
+
+**rodar o proxy quando da erro de servidor no cors isso funciona só local e deve ser resolvido no backend
+-criar um arquivo chamado proxy.config.json 
+- 
+ng s --proxy-config proxy.conf.json
+isirir nele 
+{
+"/dev/*": {
+    "target": "url",
+    "secure": true,
+    "logLevel": "debug",
+    "changeOrigin": true
+}
+}
+e depois mudar o environment retirando a url de la
+e rodar 
+ng s --proxy-config proxy.conf.json
+para dar start a aplicação com essas comnfigurações.
