@@ -482,3 +482,9 @@ e depois mudar o environment retirando a url de la
 e rodar 
 ng s --proxy-config proxy.conf.json
 para dar start a aplicação com essas comnfigurações.
+
+**Caso pecise acessar o projeto em outro dispositivo na mesma rede basta executar:
+ng s --host 0.0.0.0
+e acessar no outro dispositivo com 
+ip:porta 
+Ex. 999.99.999.999:4200
